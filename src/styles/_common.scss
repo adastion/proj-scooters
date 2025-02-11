@@ -43,6 +43,10 @@ button {
         @include responsive-size(font-size, 16, 22, lg);
 }
 
+.app-text-small {
+    font-size: 0.75rem;
+}
+
 .app-header {
         &,
         & * {
