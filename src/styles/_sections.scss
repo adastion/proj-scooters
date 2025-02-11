@@ -4,3 +4,9 @@
 // @include media-breakpoint-up(lg) {
 // 	Breakpoint styles
 // }
+
+.section-width-block {
+        @include media-breakpoint-up(xl) {
+                width: 50%;
+        }
+}

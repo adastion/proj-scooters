@@ -44,7 +44,7 @@ button {
 }
 
 .app-text-small {
-    font-size: 0.75rem;
+        font-size: 0.75rem;
 }
 
 .app-header {
@@ -117,6 +117,21 @@ button {
                         height: 50vh !important;
                 }
         }
+        &--cover {
+                background-size: cover;
+        }
+        &--blur {
+                position: relative;
+                z-index: 1;
+                &:after {
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        background-color: $white;
+                        opacity: 0.9;
+                        z-index: -1;
+                }
+        }
 }
 
 .app-img-wrap {
@@ -125,4 +140,14 @@ button {
         & img {
                 object-fit: cover;
         }
+        &--w25 {
+                aspect-ratio: auto;
+                & img {
+                        object-fit: contain;
+                }
+        }
+}
+
+.app-bg-attachment {
+        background-attachment: fixed;
 }
