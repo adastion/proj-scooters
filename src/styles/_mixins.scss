@@ -1,0 +1,39 @@
+@use 'sass:math'; // Подключаем модуль math
+@use 'sass:map'; // Подключаем модуль map
+@use 'sass:list'; // Подключаем модуль list
+// @use "sass:color"; // Подключаем модуль color
+
+// Миксин для динамического размера
+@mixin responsive-size($property, $min-size, $max-size, $breakpoint, $additional-args...) {
+    $min-viewport: 320;
+    $max-viewport: calc(map.get($grid-breakpoints, $breakpoint) / 1px);
+    $size-factor: calc(($max-size - $min-size) / ($max-viewport - $min-viewport));
+    $calc-vw: 100vw * $size-factor;
+    $calc-px: $min-size * 1px - $min-viewport * 1px * $size-factor;
+    $rounded-px: calc(math.round(calc($calc-px * 100 / 1px)) / 100 * 1px);
+    $rounded-vw: calc(math.round(calc($calc-vw * 100 / 1vw)) / 100 * 1vw);
+
+    @if list.length($additional-args) == 2 {
+        #{$property}: list.nth($additional-args, 1) calc($rounded-px + $rounded-vw) list.nth($additional-args, 2);
+
+        @include media-breakpoint-up($breakpoint) {
+            #{$property}: list.nth($additional-args, 1) #{$max-size}px list.nth($additional-args, 2);
+        }
+    } @else {
+        #{$property}: calc($rounded-px + $rounded-vw) $additional-args;
+
+        @include media-breakpoint-up($breakpoint) {
+            #{$property}: #{$max-size}px $additional-args;
+        }
+    }
+}
+
+@mixin font-face($family, $name, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $family;
+        font-style: $style;
+        font-weight: $weight;
+        src: url('./fonts/#{$name}.woff2') format('woff2'), url('./fonts/#{$name}.woff') format('woff'),
+            url('./fonts/#{$name}.ttf') format('truetype');
+    }
+}

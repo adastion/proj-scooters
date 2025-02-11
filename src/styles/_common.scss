@@ -1,0 +1,87 @@
+a {
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+}
+
+a,
+button {
+        border-radius: $border-radius-pill !important;
+}
+
+[id] {
+        scroll-margin-top: $scroll-offset;
+}
+
+.text-red {
+        color: red;
+}
+
+// Class for using the same width of characters in text (e.g. phone numbers)
+.text-tnum {
+        font-feature-settings: 'tnum';
+}
+
+/* Example of using responsive-size mixin for font-size, border and box-shadow
+.responsive-size {
+    padding: 10px;
+    @include responsive-size(font-size, 32, 72, lg);
+    @include responsive-size(border, 10, 50, md, solid $primary);
+    @include responsive-size(box-shadow, 0, 20, md, inset 0 0, 10px rgba($black, 50%));
+}*/
+
+.app-title {
+        @include responsive-size(font-size, 32, 60, lg);
+        font-weight: 700;
+        &--navigation {
+                font-size: 1.125rem;
+                @include media-breakpoint-only(lg) {
+                        font-size: 0.875rem;
+                }
+        }
+}
+
+.app-header {
+        @include responsive-size(font-size, 24, 48, lg);
+        font-weight: bold;
+        text-align: center;
+        color: var(--bs-body-bg);
+        background-color: var(--bs-body-color);
+        padding: 1rem 0;
+}
+
+/*
+* Mobile table fix
+* Try to use media-breakpoint-up mixin, because media-breakpoint-down does not correspond to the mobile first approach.
+* Here it is used specifically to override the default bootstrap styles.
+*/
+.app-table-mobile {
+        tbody {
+                tr {
+                        td,
+                        th {
+                                @include media-breakpoint-down(sm) {
+                                        display: block;
+                                }
+
+                                &:first-child {
+                                        @include media-breakpoint-down(sm) {
+                                                padding-bottom: 0 !important;
+                                                border-bottom-width: 0 !important;
+                                        }
+                                }
+                        }
+                }
+        }
+}
+
+.app-lightcountdown {
+        @include responsive-size(font-size, 16, 24, lg);
+}
+
+/*
+* Custom bootstrap button variant example
+* Accent variable is set in scss vars file
+*/
+.app-btn-accent {
+        @include button-variant($accent, $accent);
+}

@@ -1,0 +1,51 @@
+@import "bootstrap/scss/bootstrap";
+
+/* Or import only the modules you need
+//### Configuration
+@import '../../node_modules/bootstrap/scss/variables'; // Переменные: Настройка цветовой схемы и общих переменных
+@import '../../node_modules/bootstrap/scss/variables-dark'; // Темные переменные: Переменные для темной темы
+@import '../../node_modules/bootstrap/scss/maps'; // Карты: Карты (ключ-значение) для работы с переменными
+@import '../../node_modules/bootstrap/scss/mixins'; // Миксины: Миксины для переиспользования стилей
+@import '../../node_modules/bootstrap/scss/utilities'; // Утилиты: Базовые утилиты и вспомогательные классы
+
+//### Layout
+@import '../../node_modules/bootstrap/scss/root'; // Корень: Основные стили корневого элемента
+@import '../../node_modules/bootstrap/scss/reboot'; // Сброс стилей: Нормализация и сброс стандартных стилей
+@import '../../node_modules/bootstrap/scss/type'; // Типографика: Стили для текста
+@import '../../node_modules/bootstrap/scss/images'; // Изображения: Стили для работы с изображениями
+@import '../../node_modules/bootstrap/scss/containers'; // Контейнеры: Основные контейнеры для сетки
+@import '../../node_modules/bootstrap/scss/grid'; // Сетка: Сетка для разметки страницы
+
+//### Components
+@import '../../node_modules/bootstrap/scss/tables'; // Таблицы: Стили для таблиц
+@import '../../node_modules/bootstrap/scss/forms'; // Формы: Стили для форм и их элементов
+@import '../../node_modules/bootstrap/scss/buttons'; // Кнопки: Стили для кнопок // Requires mixins
+@import '../../node_modules/bootstrap/scss/transitions'; // Переходы: CSS-переходы для анимаций
+// @import "../../node_modules/bootstrap/scss/dropdown"; // Выпадающие списки: Стили для dropdown-меню // Requires buttons
+// @import "../../node_modules/bootstrap/scss/button-group"; // Группы кнопок: Стили для группировки кнопок // Requires mixins
+@import '../../node_modules/bootstrap/scss/nav'; // Навигация: Стили для навигационных элементов // Requires mixins
+@import '../../node_modules/bootstrap/scss/navbar'; // Навбар: Стили для верхней панели навигации // Requires nav, mixins, buttons, forms
+// @import "../../node_modules/bootstrap/scss/card"; // Карточки: Стили для карточек // Requires mixins
+// @import "../../node_modules/bootstrap/scss/breadcrumb"; // Хлебные крошки: Стили для навигации по разделам сайта // Requires mixins
+// @import "../../node_modules/bootstrap/scss/accordion"; // Аккордеон: Стили для аккордеонов (скрывающиеся блоки) // Requires transitions
+// @import "../../node_modules/bootstrap/scss/pagination"; // Пагинация: Стили для постраничной навигации // Requires mixins
+// @import "../../node_modules/bootstrap/scss/badge"; // Значки: Стили для значков и меток // Requires mixins
+// @import "../../node_modules/bootstrap/scss/alert"; // Оповещения: Стили для уведомлений и алертов // Requires mixins
+// @import "../../node_modules/bootstrap/scss/progress"; // Прогресс: Стили для индикаторов прогресса // Requires mixins
+// @import "../../node_modules/bootstrap/scss/list-group"; // Списки: Стили для группировки списков // Requires mixins
+@import '../../node_modules/bootstrap/scss/close'; // Закрытие: Стили для кнопок закрытия модальных окон и других элементов // Requires mixins
+// @import "../../node_modules/bootstrap/scss/toasts"; // Тосты: Стили для всплывающих уведомлений // Requires transitions, buttons, close
+@import '../../node_modules/bootstrap/scss/modal'; // Модальные окна: Стили для модальных окон // Requires transitions, buttons, close
+// @import "../../node_modules/bootstrap/scss/tooltip"; // Подсказки: Стили для всплывающих подсказок // Requires mixins, transitions
+// @import "../../node_modules/bootstrap/scss/popover"; // Всплывающие окна: Стили для всплывающих окон, зависящих от подсказок // Requires tooltip, buttons
+// @import '../../node_modules/bootstrap/scss/carousel'; // Карусель: Стили для слайдеров и каруселей // Requires transitions
+// @import "../../node_modules/bootstrap/scss/spinners"; // Спиннеры: Стили для индикаторов загрузки // Requires mixins
+// @import '../../node_modules/bootstrap/scss/offcanvas'; // Скрытые панели: Стили для выдвижных панелей // Requires transitions, buttons, close
+// @import "../../node_modules/bootstrap/scss/placeholders"; // Заглушки: Стили для плейсхолдеров // Requires mixins
+
+//### Helpers
+@import '../../node_modules/bootstrap/scss/helpers'; // Хелперы: Вспомогательные классы и миксины // Requires mixins
+
+//### Utilities
+@import '../../node_modules/bootstrap/scss/utilities/api'; // Утилиты: Настройка и генерация утилитарных классов
+*/
