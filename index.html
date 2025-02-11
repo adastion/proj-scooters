@@ -299,101 +299,23 @@
             section-features
         </header>
 
-        <section id="section-icons" class="py-5">
-            <p class="text-center">Различные хелперы для проекта</p>
+        <section id="section-callback" class="py-5 bg-accent text-white">
             <div class="container">
-                <div class="row gy-4">
-                    <div class="col-lg-6">
-                        <p class="fw-bold">Icons</p>
-                        <p>Для работы с иконками добавьте их в секцию SVG внизу файла index.html (по умолчанию добавлено
-                            несколько иконок в проект)</p>
-                        <div class="my-4">
-                            <p>Icons in text:</p>
-                            <div>
-                                Phone:
-                                <svg height="16" width="16">
-                                    <use href="#icon-phone"></use>
-                                </svg>
-                            </div>
-                            <div class="text-success">
-                                Check:
-                                <svg height="16" width="16">
-                                    <use href="#icon-check"></use>
-                                </svg>
-                            </div>
-                            <div class="text-primary">
-                                Cart:
-                                <svg height="16" width="16">
-                                    <use href="#icon-cart"></use>
-                                </svg>
-                            </div>
-                            <div class="text-danger">
-                                Question:
-                                <svg height="16" width="16">
-                                    <use href="#icon-question"></use>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="my-4">
-                            <p>Icons in list:</p>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <svg height="16" width="16" class="text-success">
-                                        <use href="#icon-check"></use>
-                                    </svg>
-                                    Item text
-                                </li>
-                                <li>
-                                    <svg height="16" width="16" class="text-success">
-                                        <use href="#icon-check"></use>
-                                    </svg>
-                                    Item text
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="my-4">
-                            <p>Icons in buttons:</p>
-                            <button type="button" class="btn btn-primary ms-auto" data-bs-toggle="modal"
-                                data-bs-target="#modal-order" aria-label="Заказать звонок">
-                                <svg height="16" width="16">
-                                    <use href="#icon-phone"></use>
-                                </svg>
-                                <span class="ms-1">Заказать звонок</span>
-                            </button>
-                        </div>
+                <div class="row row-cols-lg-2 h-100">
+                    <div class="text-center">
+                        <h3>Закажите обратный звонок</h3>
+                        <p>Закажите звонок, менеджер перезвонит вам в течение 10 минут и ответит на все вопросы, касающиеся выбора и приобретения электротранспорта</p>
                     </div>
-                    <div class="col-lg-6">
-                        <p class="fw-bold">Fix tables on mobile (app-table-mobile class)</p>
-                        <p>На мобильных устройствах первая колонка становится во всю длину (display block)</p>
-                        <table class="table app-table-mobile">
-                            <thead>
-                                <tr>
-                                    <th scope="col" colspan="2" class="table-dark">Характеристики</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Мощность</th>
-                                    <td>8 л.с.</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">ВОМ</th>
-                                    <td>
-                                        <svg height="16" width="16" class="text-success">
-                                            <use href="#icon-check"></use>
-                                        </svg>
-                                        Есть
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <form class="text-center d-grid d-md-flex justify-content-center align-items-md-center gap-3">
+                        <input class="rounded-pill p-2 p-lg-3 text-center" type="tel" placeholder="+375 33 999 99 99" aria-label="telephone">
+                        <button class="btn btn-dark p-2 p-lg-3" type="submit" aria-label="Заказать звонок">Заказать звонок</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-dark border-top border-3 py-3" id="section-footer">
+    <footer class="bg-dark py-3" id="section-footer">
         <div class="container text-white pt-3">
             <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-5 text-white">
                 <div>
@@ -452,8 +374,8 @@
             </div>
             <div class="row justify-content-between">
                 <div class="col-lg-3">
-                    <small class="text-white-50 mb-3 app-text-small">© Topscooter 2024 Все права защищены</small>
-                    <p class="app-text-small">
+                    <small class="text-white-50 app-text-small">© Topscooter 2024 Все права защищены</small>
+                    <p class="app-text-small mt-4">
                         При покупке в кредит/рассрочку акционные цены не действуют Информация на сайте не является
                         публичной офертой
                     </p>
