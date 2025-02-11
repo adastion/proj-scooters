@@ -30,14 +30,17 @@ button {
 }*/
 
 .app-title {
-        @include responsive-size(font-size, 32, 60, lg);
-        font-weight: 700;
+        @include responsive-size(font-size, 30, 60, lg);
         &--navigation {
                 font-size: 1.125rem;
                 @include media-breakpoint-only(lg) {
                         font-size: 0.875rem;
                 }
         }
+}
+
+.app-text-primary {
+        @include responsive-size(font-size, 20, 30, lg);
 }
 
 .app-header {
@@ -84,4 +87,16 @@ button {
 */
 .app-btn-accent {
         @include button-variant($accent, $accent);
+}
+
+.app-bg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        &--lg-50vh {
+            height: auto;
+                @include media-breakpoint-down(lg) {
+                        height: 50vh !important;
+                }
+        }
 }

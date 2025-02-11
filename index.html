@@ -26,7 +26,7 @@
         <nav class="navbar navbar-expand-lg py-1 bg-dark">
             <div class="container-fluid">
                 <div class="d-none d-sm-inline d-lg-none d-xl-inline me-3">
-                    <a href="#">
+                    <a href="#home">
                         <picture>
                             <source srcset="./assets/images/logo/logo.png" type="image/png" media="(min-width: 320px)">
                             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
@@ -113,38 +113,36 @@
     </header>
 
     <main>
-        <section id="section-main" class="py-5 mt-5">
+        <section id="home" class="py-5 mt-2 border-bottom border-5 border-accent">
             <div class="container">
-                <h1 class="app-title fw-bold">
-                    Адаптивные&shy;Решения
-                </h1>
-
-                <div class="row gy-4">
-                    <div class="col">
-                        <p>Неразрывный&nbsp;пробел: <span class="fw-bold text-success fs-3">&amp;nbsp;</span></p>
-                        <p>NBSP (англ. non-breaking space) — символ неразрывного пробела в тексте. В отличие от обычного
-                            пробела не дает браузеру разрывать строку в месте, где расположен.</p>
-                    </div>
-                    <div class="col">
-                        <p>Мягкий перенос слова: <span class="fw-bold text-success fs-3">&amp;shy;</span></p>
-                        <p>Мягкий перенос — это перенос части слова на новую строку в случае необходимости. Если
-                            необходимости в переносе нет, то он никак себя не проявляет.</p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="row gy-4">
+                <div class="row gy-4 h-100">
                     <div class="col-lg-6">
-                        <p>Custom bootstrap button variant example</p>
-                        <button type="button" class="btn app-btn-accent btn-lg" data-bs-toggle="modal"
-                            data-bs-target="#modal-order">
-                            Заказать звонок
-                        </button>
+                        <h1 class="app-title fw-bold">
+                            <strong>Электротранспорт </strong>со скидкой<span class="text-accent"> 30%</span>
+                        </h1>
+                        <ul>
+                            <li class="app-text-primary">Рассрочка до <span class="text-accent fw-bold"> 60
+                                    месяцев</span></li>
+                            <li class="app-text-primary">Гарантия <span class="text-accent fw-bold"> 12 месяцев </span>
+                            </li>
+                            <li class="app-text-primary"><span class="text-accent fw-bold"> Бесплатный </span>тест-драйв
+                            </li>
+                            <li class="app-text-primary"><span class="text-accent fw-bold"> 6 Подарков</span>к заказу
+                            </li>
+                        </ul>
+                        <div class="d-flex flex-column flex-sm-row gap-3">
+                            <button type="button" class="btn app-btn-accent btn-lg text-white border-1 shadow-lg"
+                                data-bs-toggle="modal" data-bs-target="#modal-order">
+                                Подобрать модель
+                            </button>
+                            <button type="button" class="btn app-btn-accent btn-lg text-white border-1 shadow-lg"
+                                data-bs-toggle="modal" data-bs-target="#modal-order">
+                                Заказать со скидкой
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <p>Обратный отсчет для главного блока (lightcountdown)</p>
-                        <div class="lightcountdown app-lightcountdown"></div>
+                    <div class="col-lg-6 app-bg app-bg--lg-50vh"
+                        style="background-image: url('./assets/images/main_img4-1042x804.png');">
                     </div>
                 </div>
             </div>

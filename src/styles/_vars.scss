@@ -41,8 +41,7 @@ $font-family-sans-serif: 'Montserrat', sans-serif;
 
 /* Shadows */
 $enable-shadows: true;
-$box-shadow-lg: 0 1rem 3rem rgba($black, 0.175);
-$box-shadow-inset: inset 0 1px 2px rgba($black, 0.075);
+$box-shadow-lg: 0 0.3rem 0.5rem rgba($black, 0.6);
 
 /* Grid breakpoint */
 $grid-breakpoints: (
