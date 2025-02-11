@@ -40,16 +40,30 @@ button {
 }
 
 .app-text-primary {
-        @include responsive-size(font-size, 20, 30, lg);
+        @include responsive-size(font-size, 16, 22, lg);
 }
 
 .app-header {
-        @include responsive-size(font-size, 24, 48, lg);
-        font-weight: bold;
-        text-align: center;
-        color: var(--bs-body-bg);
-        background-color: var(--bs-body-color);
-        padding: 1rem 0;
+        &,
+        & * {
+                @include responsive-size(font-size, 40, 60, lg);
+                text-align: center;
+        }
+        &--line {
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+                &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        height: 1.5rem;
+                        background-color: $accent;
+                        bottom: 0.25rem;
+                        z-index: -1;
+                }
+        }
 }
 
 /*
@@ -94,9 +108,17 @@ button {
         background-repeat: no-repeat;
         background-size: contain;
         &--lg-50vh {
-            height: auto;
+                height: auto;
                 @include media-breakpoint-down(lg) {
                         height: 50vh !important;
                 }
+        }
+}
+
+.app-img-wrap {
+        width: 100%;
+        aspect-ratio: 1/1;
+        & img {
+                object-fit: cover;
         }
 }
