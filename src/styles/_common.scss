@@ -41,6 +41,9 @@ button {
 
 .app-text-primary {
         @include responsive-size(font-size, 16, 22, lg);
+        &--22-32 {
+            @include responsive-size(font-size, 22, 32, lg);
+        }
 }
 
 .app-text-small {
