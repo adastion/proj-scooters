@@ -10,3 +10,11 @@
                 width: 50%;
         }
 }
+
+.section-catalog-card {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+                $box-shadow-lg: 0 0.5rem 1rem rgba($black, 0.6);
+                box-shadow: $box-shadow-lg !important;
+        }
+}

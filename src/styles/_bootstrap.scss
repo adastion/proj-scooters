@@ -1,5 +1,6 @@
 @import "bootstrap/scss/bootstrap";
 @import "../../node_modules/bootstrap/scss/accordion"; // Аккордеон: Стили для аккордеонов (скрывающиеся блоки) // Requires transitions
+@import '../../node_modules/bootstrap/scss/carousel'; // Карусель: Стили для слайдеров и каруселей // Requires transitions
 
 /* Or import only the modules you need
 //### Configuration
@@ -38,7 +39,6 @@
 @import '../../node_modules/bootstrap/scss/modal'; // Модальные окна: Стили для модальных окон // Requires transitions, buttons, close
 // @import "../../node_modules/bootstrap/scss/tooltip"; // Подсказки: Стили для всплывающих подсказок // Requires mixins, transitions
 // @import "../../node_modules/bootstrap/scss/popover"; // Всплывающие окна: Стили для всплывающих окон, зависящих от подсказок // Requires tooltip, buttons
-// @import '../../node_modules/bootstrap/scss/carousel'; // Карусель: Стили для слайдеров и каруселей // Requires transitions
 // @import "../../node_modules/bootstrap/scss/spinners"; // Спиннеры: Стили для индикаторов загрузки // Requires mixins
 // @import '../../node_modules/bootstrap/scss/offcanvas'; // Скрытые панели: Стили для выдвижных панелей // Requires transitions, buttons, close
 // @import "../../node_modules/bootstrap/scss/placeholders"; // Заглушки: Стили для плейсхолдеров // Requires mixins
