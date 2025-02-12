@@ -13,7 +13,7 @@ import 'lite-youtube-embed/src/lite-yt-embed.css';
 import 'bootstrap/js/dist/button';
 // import 'bootstrap/js/dist/carousel';
 import 'bootstrap/js/dist/collapse';
-//import 'bootstrap/js/dist/dropdown';
+import 'bootstrap/js/dist/dropdown';
 import bootstrapModal from 'bootstrap/js/dist/modal';
 // import 'bootstrap/js/dist/offcanvas';
 //import 'bootstrap/js/dist/popover';
