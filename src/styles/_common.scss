@@ -140,12 +140,6 @@ button {
         & img {
                 object-fit: cover;
         }
-        &--w25 {
-                aspect-ratio: auto;
-                & img {
-                        object-fit: contain;
-                }
-        }
 }
 
 .app-bg-attachment {
