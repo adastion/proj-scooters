@@ -1,4 +1,5 @@
 @import "bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/accordion"; // Аккордеон: Стили для аккордеонов (скрывающиеся блоки) // Requires transitions
 
 /* Or import only the modules you need
 //### Configuration
@@ -27,7 +28,6 @@
 @import '../../node_modules/bootstrap/scss/navbar'; // Навбар: Стили для верхней панели навигации // Requires nav, mixins, buttons, forms
 // @import "../../node_modules/bootstrap/scss/card"; // Карточки: Стили для карточек // Requires mixins
 // @import "../../node_modules/bootstrap/scss/breadcrumb"; // Хлебные крошки: Стили для навигации по разделам сайта // Requires mixins
-// @import "../../node_modules/bootstrap/scss/accordion"; // Аккордеон: Стили для аккордеонов (скрывающиеся блоки) // Requires transitions
 // @import "../../node_modules/bootstrap/scss/pagination"; // Пагинация: Стили для постраничной навигации // Requires mixins
 // @import "../../node_modules/bootstrap/scss/badge"; // Значки: Стили для значков и меток // Requires mixins
 // @import "../../node_modules/bootstrap/scss/alert"; // Оповещения: Стили для уведомлений и алертов // Requires mixins
