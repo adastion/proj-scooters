@@ -267,7 +267,7 @@
                         </li>
                         <li>
                             <button class="btn btn-link link-accent link-underline-opacity-0 fw-bold fs-5"
-                                type="button">Самокаты</button>
+                                type="button">Трициклы</button>
                         </li>
                         <li>
                             <button class="btn btn-link link-accent link-underline-opacity-0 fw-bold fs-5"
@@ -378,7 +378,8 @@
                                     </div>
                                     <div class="btn-group align-items-stretch d-flex justify-content-between gap-2"
                                         role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-outline-secondary px-1">Подробнее</button>
+                                        <button type="button" class="btn btn-outline-secondary px-1"
+                                            data-bs-toggle="modal" data-bs-target="#modal-card-info">Подробнее</button>
                                         <a href="#" class="btn btn-accent text-white px-1">Заказать</a>
                                     </div>
                                 </div>
@@ -437,6 +438,31 @@
                         <li>
                             <div class="card h-100 shadow-lg rounded-4 overflow-hidden">
                                 <img src="./assets/images/cotalog/11.jpg" class="card-img-top rou"
+                                    alt="product-preview">
+                                <div class="card-body">
+                                    <h4 class="card-title fw-bold">Himo L2</h4>
+                                    <p class="card-text">
+                                        <span>Вес:</span><span> 12 кг</span> <br>
+                                        <span>Мощность:</span><span> 350 W</span> <br>
+                                        <span>Аккумулятор:</span> <span> 6800 mAh</span> <br>
+                                        <span>Max скорость: до</span><span> 25 км/ч</span> <br>
+                                        <span>Max пробег: до </span><span> 30 км</span> <br>
+                                    </p>
+                                    <div class="fw-bold fs-4 mb-4">
+                                        <span>899 р. </span>
+                                        <span class="text-black-50 text-decoration-line-through">1168 р.</span>
+                                    </div>
+                                    <div class="btn-group align-items-stretch d-flex justify-content-between gap-2"
+                                        role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-outline-secondary px-1">Подробнее</button>
+                                        <a href="#" class="btn btn-accent text-white px-1">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card h-100 shadow-lg rounded-4 overflow-hidden">
+                                <img src="./assets/images/cotalog/16.jpg" class="card-img-top rou"
                                     alt="product-preview">
                                 <div class="card-body">
                                     <h4 class="card-title fw-bold">Himo L2</h4>
@@ -1365,6 +1391,31 @@
                         </div>
                         <button type="submit" class="btn btn-accent text-white btn-lg w-100">Заказать звонок</button>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-card-info">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close float-end" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="fs-2 text-center">Оставьте номер телефона</div>
+                    <div class="fs-3 text-center">Менеджер перезвонит Вам в ближайшее время!</div>
+                    <hr>
+                    <div class="fw-bold fs-3 d-flex flex-column align-items-center text-tnum">
+                        <a href="tel:+375290000000"
+                            class="d-flex justify-content-center align-items-center text-dark link-primary">
+                            <img src="./assets/images/operator/logo_A1_56.png" class="img-fluid me-3" alt="A1"
+                                width="32"><span class="d-none d-sm-inline">+375 </span>(29) 000-00-00
+                        </a>
+                        <a href="tel:+375330000000"
+                            class="d-flex justify-content-center align-items-center text-dark link-primary">
+                            <img src="./assets/images/operator/logo_mts_64.jpg" class="img-fluid me-3" alt="mts"
+                                width="32"><span class="d-none d-sm-inline">+375 </span>(33) 000-00-00
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
