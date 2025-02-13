@@ -42,7 +42,7 @@ button {
 .app-text-primary {
         @include responsive-size(font-size, 16, 22, lg);
         &--22-32 {
-            @include responsive-size(font-size, 22, 32, lg);
+                @include responsive-size(font-size, 22, 32, lg);
         }
 }
 
@@ -141,8 +141,8 @@ button {
         width: 100%;
         aspect-ratio: 1/1;
         overflow: hidden;
-        object-fit: cover;
         & img {
+                object-fit: cover;
         }
 }
 
@@ -151,5 +151,5 @@ button {
 }
 
 .app-dropdown-height {
-    max-height: 12.5rem;
+        max-height: 12.5rem;
 }
