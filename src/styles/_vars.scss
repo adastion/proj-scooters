@@ -40,6 +40,8 @@ $scroll-offset: 59px;
 $font-family-sans-serif: 'Montserrat', sans-serif;
 
 /* Shadows */
+$focus-ring-opacity: 0.25;
+$focus-ring-color: rgba($accent, $focus-ring-opacity);
 $enable-shadows: true;
 $box-shadow-lg: 0 0.3rem 0.5rem rgba($black, 0.6);
 

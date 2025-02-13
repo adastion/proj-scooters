@@ -9,7 +9,7 @@
                 font-size: 1.2em;
         }
         &__selection {
-                margin-top: 2rem;
+                margin-top: 4rem;
         }
         label {
                 cursor: pointer;
@@ -28,7 +28,7 @@
                         left: 0;
                         width: 0;
                         height: 3px;
-                        background-color: var(--bs-primary);
+                        background-color: var(--bs-accent);
                         transition: width 300ms;
                 }
 

@@ -137,7 +137,7 @@
                             </ul>
                             <div class="d-flex flex-column flex-sm-row gap-3">
                                 <button type="button" class="btn app-btn-accent btn-lg text-white border-1 shadow-lg"
-                                    data-bs-toggle="modal" data-bs-target="#modal-order">
+                                    data-bs-toggle="modal" data-bs-target="#modal-quiz">
                                     Подобрать модель
                                 </button>
                                 <button type="button" class="btn app-btn-accent btn-lg text-white border-1 shadow-lg"
@@ -1477,265 +1477,245 @@
             </div>
         </div>
     </div>
-
-    <section id="component-quiz">
-        <h2>Quiz component</h2>
-    
-        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal-quiz">Open quiz in modal</button>
-    
-        <div id="modal-quiz" class="modal fade" tabindex="-1">
-            <div class="modal-dialog modal-dialog-scrollable modal-xl modal-fullscreen-sm-down">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title"><i class="fas fa-gift"></i> Узнать стоимость мтоблока и получить подарок</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <form>
-                            <div id="quiz" class="swiper">
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <div class="quiz">
-                                            <div class="quiz__title">Бренд</div>
-                                            <div class="quiz__description">Вы уже определились с моделью мотоблока?</div>
-                                            <div class="quiz__selection">
-                                                <div class="row gy-5">
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input quiz__input--next" type="radio" name="brand" value="shtenli">
-                                                            <span class="form-check-label">
-                                                                <!--img src="assets/images/main.jpg" alt="" class="img-fluid"-->
-                                                                <i class="fas fa-shield-alt fa-5x"></i>
-                                                                <br>Shtenli
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input quiz__input--next" type="radio" name="brand" value="profi">
-                                                            <span class="form-check-label">
-                                                                <i class="fas fa-shield-alt fa-5x"></i>
-                                                                <br>Profi
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input quiz__input--next" type="radio" name="brand" value="all">
-                                                            <span class="form-check-label">
-                                                                <i class="fas fa-arrow-circle-right fa-5x"></i>
-                                                                <br>Любой
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
+    <div id="modal-quiz" class="modal fade" tabindex="-1">
+        <div class="modal-dialog  modal-dialog-scrollable modal-xl modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title app-primary">Пройдите тест, чтобы мы смогли подобрать для Вас идеальный вариант! </h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <form>
+                        <div id="quiz" class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="quiz">
+                                        <div class="quiz__title">Бренд</div>
+                                        <div class="quiz__description">Какой тип транспорта вам подходит? </div>
+                                        <div class="quiz__selection">
+                                            <div class="row row-cols-md-2 row-cols-lg-5 gy-5">
+                                                <div>
+                                                    <label
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        <span class="app-img-wrap d-inline-block overflow-hidden">
+                                                            <img class="w-100"
+                                                                src="./assets/images/catalog/1583568217.png" alt="pic">
+                                                        </span>
+                                                        <input class=" visually-hidden" type="radio" name="brand"
+                                                            value="Электросамокат" checked>
+                                                        <span class="fs-6 flex-grow-0"> <br>Электросамокат </span>
+                                                    </label>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="quiz">
-                                            <div class="quiz__title">Навесное оборудование</div>
-                                            <div class="quiz__description">Какое дополнительное навесное оборудование Вам необходимо?</div>
-                                            <div class="quiz__selection">
-                                                <div class="row gy-5">
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input" type="checkbox" name="additional[]" value="Плуг">
-                                                            <span class="form-check-label">
-                                                                <i class="fas fa-shield-alt fa-5x"></i>
-                                                                <br>Плуг
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input" type="checkbox" name="additional[]" value="Окучник">
-                                                            <span class="form-check-label">
-                                                                <i class="fas fa-shield-alt fa-5x"></i>
-                                                                <br>Окучник
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input" type="checkbox" name="additional[]" value="Картофеле копалка">
-                                                            <span class="form-check-label">
-                                                                <i class="fas fa-shield-alt fa-5x"></i>
-                                                                <br>Картофеле копалка
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input" type="checkbox" name="additional[]" value="Борона">
-                                                            <span class="form-check-label">
-                                                                <i class="fas fa-shield-alt fa-5x"></i>
-                                                                <br>Борона
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input" type="checkbox" name="additional[]" value="Прицеп">
-                                                            <span class="form-check-label">
-                                                                <i class="fas fa-shield-alt fa-5x"></i>
-                                                                <br>Прицеп
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
+                                                <div>
+                                                    <label
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        <span class="app-img-wrap d-inline-block overflow-hidden">
+                                                            <img class="w-100" src="./assets/images/catalog/16.jpg"
+                                                                alt="pic">
+                                                        </span>
+                                                        <input class=" visually-hidden" type="radio" name="brand"
+                                                            value="Электроскутер">
+                                                        <span class="fs-6 flex-grow-0"> <br>Электроскутер </span>
+                                                    </label>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="quiz">
-                                            <div class="quiz__title">Форма оплаты</div>
-                                            <div class="quiz__description">Какой способ оплаты для Вас предпочтителен?</div>
-                                            <div class="quiz__selection">
-                                                <div class="row gy-5">
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input quiz__input--next" type="radio" name="payment_method" value="Наличные">
-                                                            <span class="form-check-label">
-                                                                <i class="fas fa-shield-alt fa-5x"></i>
-                                                                <br>Наличные
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input quiz__input--next" type="radio" name="payment_method" value="Кредит">
-                                                            <span class="form-check-label">
-                                                                <i class="fas fa-shield-alt fa-5x"></i>
-                                                                <br>Кредит
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input quiz__input--next" type="radio" name="payment_method" value="Рассрочка">
-                                                            <span class="form-check-label">
-                                                                <i class="fas fa-shield-alt fa-5x"></i>
-                                                                <br>Рассрочка
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
+                                                <div>
+                                                    <label
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        <span class="app-img-wrap d-inline-block overflow-hidden">
+                                                            <img class="w-100" src="./assets/images/catalog/12.jpg"
+                                                                alt="pic">
+                                                        </span>
+                                                        <input class=" visually-hidden" type="radio" name="brand"
+                                                            value="Электровелосипед">
+                                                        <span class="fs-6 flex-grow-0"> <br>Электровелосипед </span>
+                                                    </label>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="quiz">
-                                            <div class="quiz__title">Контакты</div>
-                                            <div class="quiz__description">Как с вами лучше связаться?</div>
-                                            <div class="quiz__selection">
-                                                <div class="row gy-5">
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input quiz__input--next" type="radio" name="contact" value="Телефон">
-                                                            <span class="form-check-label">
-                                                                <i class="fas fa-phone-square fa-5x"></i>
-                                                                <br>По телефону
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input quiz__input--next" type="radio" name="contact" value="Viber">
-                                                            <span class="form-check-label">
-                                                                <i class="fab fa-viber fa-5x"></i>
-                                                                <br>Viber
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input quiz__input--next" type="radio" name="contact" value="Telegram">
-                                                            <span class="form-check-label">
-                                                                <i class="fab fa-telegram fa-5x"></i>
-                                                                <br>Telegram
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
-                                                    <div class="col-6 col-lg-3">
-                                                        <label class="form-check form-check-image">
-                                                            <input class="form-check-input quiz__input--next" type="radio" name="contact" value="Whatsapp">
-                                                            <span class="form-check-label">
-                                                                <i class="fab fa-whatsapp fa-5x"></i>
-                                                                <br>Whatsapp
-                                                            </span>
-                                                            <span class="quiz__border"></span>
-                                                        </label>
-                                                    </div>
-    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="quiz">
-                                            <div class="quiz__title">Всё готово!</div>
-                                            <div class="quiz__description">На какой номер отправить предложение?</div>
-                                            <div class="quiz__selection">
-                                                <div class="form-floating">
-                                                    <input name="name" type="text" class="form-control" id="quiz-name" placeholder="Ваше имя">
-                                                    <label for="quiz-name">Ваше имя</label>
-                                                </div>
-                                                <div class="form-floating mt-4">
-                                                    <input name="phone" type="tel" class="form-control" id="quiz-tel" placeholder="Номер телефона" required>
-                                                    <label for="quiz-tel">Номер телефона *</label>
-                                                </div>
-                                                <button type="submit" class="btn btn-primary btn-lg w-100 mt-4 app-ff-alt">Получить расчет</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-pagination"></div>
+                                <div class="swiper-slide">
+                                    <div class="quiz">
+                                        <div class="quiz__description">Кто будет кататься? </div>
+                                        <div class="quiz__selection">
+                                            <div class="row row-cols-md-2 row-cols-lg-5 gy-5">
+                                                <div>
+                                                    <label
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        <span class="app-img-wrap d-inline-block overflow-hidden">
+                                                            <img class="w-100" src="./assets/images/1.png" alt="pic">
+                                                        </span>
+                                                        <input class=" visually-hidden" type="radio" name="driver"
+                                                            value="Ребенок">
+                                                        <span class="fs-6 flex-grow-0"> <br>Ребенок </span>
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        <span class="app-img-wrap d-inline-block overflow-hidden">
+                                                            <img class="w-100" src="./assets/images/3.png" alt="pic">
+                                                        </span>
+                                                        <input class=" visually-hidden" type="radio" name="driver"
+                                                            value="Взрослый" checked>
+                                                        <span class="fs-6 flex-grow-0"> <br> Взрослый </span>
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        <span class="app-img-wrap d-inline-block overflow-hidden">
+                                                            <img class="w-100" src="./assets/images/4.png" alt="pic">
+                                                        </span>
+                                                        <input class=" visually-hidden" type="radio" name="driver"
+                                                            value="Нужно кататься вдвоем">
+                                                        <span class="fs-6 flex-grow-0"> <br>Нужно кататься вдвоем
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="quiz">
+                                        <div class="quiz__description">Где планируете кататься?</div>
+                                        <div class="quiz__selection">
+                                            <div class="row row-cols-md-2 row-cols-lg-5 gy-5">
+                                                <div>
+                                                    <label
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        <span class="app-img-wrap d-inline-block overflow-hidden">
+                                                            <img class="w-100" src="./assets/images/driver1.png"
+                                                                alt="pic">
+                                                        </span>
+                                                        <input class=" visually-hidden" type="radio" name="road"
+                                                            value="В городе (тротуар + велодорожки)" checked>
+                                                        <span class="fs-6 flex-grow-0"> <br>В городе (тротуар +
+                                                            велодорожки) </span>
+                                                    </label>
+                                                </div>
+                                                <div>
+                                                    <label
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        <span class="app-img-wrap d-inline-block overflow-hidden">
+                                                            <img class="w-100" src="./assets/images/driver2.png"
+                                                                alt="pic">
+                                                        </span>
+                                                        <input class=" visually-hidden" type="radio" name="road"
+                                                            value="За городом (пересеченная местность)">
+                                                        <span class="fs-6 flex-grow-0"> <br> За городом (пересеченная
+                                                            местность) </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="quiz">
+                                        <div class="quiz__description mb-4">Сколько хотели бы проезжать на 1 заряде? </div>
+                                        <div class="quiz__selection">
+                                            <div class="row gy-5 w-100">
+                                                <div class="mt-2">
+                                                    <label class="d-flex align-items-center gap-3 m-0 p-0">
+                                                        <input class="" type="radio" name="time" value="До 30 км">
+                                                        <span class="form-check-label"> До 30 км </span>
+                                                    </label>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <label class="d-flex align-items-center gap-3 m-0 p-0">
+                                                        <input class="" type="radio" name="time" value="От 30 до 45 км">
+                                                        <span class="form-check-label"> От 30 до 45 км </span>
+                                                    </label>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <label class="d-flex align-items-center gap-3 m-0 p-0">
+                                                        <input class="" type="radio" name="time" value="Более 45 км">
+                                                        <span class="form-check-label"> Более 45 км </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="quiz">
+                                        <div class="quiz__description mb-4">С какой максимальной скоростью хотели бы
+                                            кататься?
+                                        </div>
+                                        <div class="quiz__selection">
+                                            <div class="row gy-5 w-100">
+                                                <div class="mt-2">
+                                                    <label class="d-flex align-items-center gap-3 m-0 p-0">
+                                                        <input class="" type="radio" name="speed" value="До 25 км/ч">
+                                                        <span class="form-check-label"> До 25 км/ч</span>
+                                                    </label>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <label class="d-flex align-items-center gap-3 m-0 p-0">
+                                                        <input class="" type="radio" name="speed" value="До 35 км/ч">
+                                                        <span class="form-check-label"> До 35 км/ч </span>
+                                                    </label>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <label class="d-flex align-items-center gap-3 m-0 p-0">
+                                                        <input class="" type="radio" name="speed" value="До 45 км/ч">
+                                                        <span class="form-check-label"> До 45 км/ч </span>
+                                                    </label>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <label class="d-flex align-items-center gap-3 m-0 p-0">
+                                                        <input class="" type="radio" name="speed" value="Более 45 км">
+                                                        <span class="form-check-label"> Более 45 км </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="quiz">
+                                        <p class="quiz__description mb-4">Спасибо за ответы. Оставьте Ваш номер телефона,
+                                            чтобы специалист смог подобрать для Вас идеальный вариант!</p>
+                                        <div>
+                                            <span> Также, вы получите<strong class="text-accent"> 6 подарков </strong>
+                                                на <strong class="text-accent"> 240
+                                                    рублей БЕСПЛАТНО! </strong> </span> <br>
+                                            <span> 1. Часы 50 руб. <strong class="text-accent"> 0 руб.</strong> </span>
+                                            <br>
+                                            <span> 2. Замок 20 руб. <strong class="text-accent"> 0 руб.</strong> </span>
+                                            <br>
+                                            <span> 3. Держатель для телефона 30 руб. <strong class="text-accent">0
+                                                    руб.</strong> </span>
+                                            <br>
+                                            <span> 4. Рюкзак 50 руб.<strong class="text-accent"> 0 руб.</strong> </span>
+                                            <br>
+                                            <span> 5. MP3 Плеер 50 руб.<strong class="text-accent"> 0 руб.</strong>
+                                            </span> <br>
+                                            <span> 6. Фирменная майка 50 руб.<strong class="text-accent"> 0
+                                                    руб.</strong> </span> <br>
+                                        </div>
+                                        <div
+                                            class="text-center d-grid d-md-flex justify-content-center align-items-md-center gap-3 mt-2">
+                                            <input class="form-control w-auto rounded-pill p-2 text-center text-white btn btn-accent" type="tel"
+                                                placeholder="+375 33 999 99 99" aria-label="telephone">
+                                            <button type="submit"
+                                                class="input-group-text btn btn-dark">Подобрать</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer quiz-buttons">
-                        <button type="button" class="quiz-button-prev btn btn-outline-primary me-auto"><i class="fa fa-angle-double-left"></i> Назад</button>
-                        <button type="button" class="quiz-button-next btn btn-primary">Вперед <i class="fa fa-angle-double-right"></i></button>
-                    </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer quiz-buttons">
+                    <button type="button" class="quiz-button-prev btn btn-outline-accent me-auto"> Назад</button>
+                    <button type="button" class="quiz-button-next btn btn-accent text-white">Вперед </button>
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
     <script src="./dist/bundle.js"></script>
 </body>
 

@@ -141,7 +141,9 @@ button {
         width: 100%;
         aspect-ratio: 1/1;
         overflow: hidden;
+        object-fit: cover;
         & img {
+                height: 100% !important;
                 object-fit: cover;
         }
 }

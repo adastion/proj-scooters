@@ -6,13 +6,12 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-Swiper.use([Navigation, Pagination, EffectFade]);
 
 let _config = {
         selector: '#quiz',
 };
 
-const quiz = (config = {}) => {
+const quiz = (config = {}) => {    
         _config = { ..._config, ...config };
         /*
          * TODO: make quiz component works with many containers
@@ -23,6 +22,7 @@ const quiz = (config = {}) => {
 
         if (quizContainer) {
                 const swiper = new Swiper(quizContainer, {
+                        modules: [Navigation, Pagination, EffectFade],
                         autoHeight: true,
                         effect: 'fade',
                         fadeEffect: { crossFade: true },

@@ -40,5 +40,5 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox();
         new LightCountdown()?.play();
         bootstrapModalHash(bootstrapModal);
-        quiz(config.get('quiz'));
+        quiz();
 });
