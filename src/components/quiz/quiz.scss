@@ -1,0 +1,51 @@
+.quiz {
+        padding: 2rem;
+        &__title {
+                font-size: 1.5em;
+                font-family: 'Montserrat', serif;
+                font-weight: bold;
+        }
+        &__description {
+                font-size: 1.2em;
+        }
+        &__selection {
+                margin-top: 2rem;
+        }
+        label {
+                cursor: pointer;
+        }
+        .form-check {
+                font-size: 1.5em;
+        }
+        .form-check-image {
+                position: relative;
+                padding-left: 0;
+
+                .quiz__border {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 3px;
+                        background-color: var(--bs-primary);
+                        transition: width 300ms;
+                }
+
+                .form-check-input:checked ~ .quiz__border,
+                &:hover .quiz__border {
+                        width: 100%;
+                }
+
+                .form-check-input {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        margin: 0;
+                        transform: scale(1.4);
+                }
+                .form-check-label {
+                        text-align: center;
+                }
+        }
+}

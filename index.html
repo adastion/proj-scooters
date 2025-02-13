@@ -1478,6 +1478,264 @@
         </div>
     </div>
 
+    <section id="component-quiz">
+        <h2>Quiz component</h2>
+    
+        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modal-quiz">Open quiz in modal</button>
+    
+        <div id="modal-quiz" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-dialog-scrollable modal-xl modal-fullscreen-sm-down">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"><i class="fas fa-gift"></i> Узнать стоимость мтоблока и получить подарок</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <form>
+                            <div id="quiz" class="swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="quiz">
+                                            <div class="quiz__title">Бренд</div>
+                                            <div class="quiz__description">Вы уже определились с моделью мотоблока?</div>
+                                            <div class="quiz__selection">
+                                                <div class="row gy-5">
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input quiz__input--next" type="radio" name="brand" value="shtenli">
+                                                            <span class="form-check-label">
+                                                                <!--img src="assets/images/main.jpg" alt="" class="img-fluid"-->
+                                                                <i class="fas fa-shield-alt fa-5x"></i>
+                                                                <br>Shtenli
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input quiz__input--next" type="radio" name="brand" value="profi">
+                                                            <span class="form-check-label">
+                                                                <i class="fas fa-shield-alt fa-5x"></i>
+                                                                <br>Profi
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input quiz__input--next" type="radio" name="brand" value="all">
+                                                            <span class="form-check-label">
+                                                                <i class="fas fa-arrow-circle-right fa-5x"></i>
+                                                                <br>Любой
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="quiz">
+                                            <div class="quiz__title">Навесное оборудование</div>
+                                            <div class="quiz__description">Какое дополнительное навесное оборудование Вам необходимо?</div>
+                                            <div class="quiz__selection">
+                                                <div class="row gy-5">
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input" type="checkbox" name="additional[]" value="Плуг">
+                                                            <span class="form-check-label">
+                                                                <i class="fas fa-shield-alt fa-5x"></i>
+                                                                <br>Плуг
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input" type="checkbox" name="additional[]" value="Окучник">
+                                                            <span class="form-check-label">
+                                                                <i class="fas fa-shield-alt fa-5x"></i>
+                                                                <br>Окучник
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input" type="checkbox" name="additional[]" value="Картофеле копалка">
+                                                            <span class="form-check-label">
+                                                                <i class="fas fa-shield-alt fa-5x"></i>
+                                                                <br>Картофеле копалка
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input" type="checkbox" name="additional[]" value="Борона">
+                                                            <span class="form-check-label">
+                                                                <i class="fas fa-shield-alt fa-5x"></i>
+                                                                <br>Борона
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input" type="checkbox" name="additional[]" value="Прицеп">
+                                                            <span class="form-check-label">
+                                                                <i class="fas fa-shield-alt fa-5x"></i>
+                                                                <br>Прицеп
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="quiz">
+                                            <div class="quiz__title">Форма оплаты</div>
+                                            <div class="quiz__description">Какой способ оплаты для Вас предпочтителен?</div>
+                                            <div class="quiz__selection">
+                                                <div class="row gy-5">
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input quiz__input--next" type="radio" name="payment_method" value="Наличные">
+                                                            <span class="form-check-label">
+                                                                <i class="fas fa-shield-alt fa-5x"></i>
+                                                                <br>Наличные
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input quiz__input--next" type="radio" name="payment_method" value="Кредит">
+                                                            <span class="form-check-label">
+                                                                <i class="fas fa-shield-alt fa-5x"></i>
+                                                                <br>Кредит
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input quiz__input--next" type="radio" name="payment_method" value="Рассрочка">
+                                                            <span class="form-check-label">
+                                                                <i class="fas fa-shield-alt fa-5x"></i>
+                                                                <br>Рассрочка
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="quiz">
+                                            <div class="quiz__title">Контакты</div>
+                                            <div class="quiz__description">Как с вами лучше связаться?</div>
+                                            <div class="quiz__selection">
+                                                <div class="row gy-5">
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input quiz__input--next" type="radio" name="contact" value="Телефон">
+                                                            <span class="form-check-label">
+                                                                <i class="fas fa-phone-square fa-5x"></i>
+                                                                <br>По телефону
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input quiz__input--next" type="radio" name="contact" value="Viber">
+                                                            <span class="form-check-label">
+                                                                <i class="fab fa-viber fa-5x"></i>
+                                                                <br>Viber
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input quiz__input--next" type="radio" name="contact" value="Telegram">
+                                                            <span class="form-check-label">
+                                                                <i class="fab fa-telegram fa-5x"></i>
+                                                                <br>Telegram
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                    <div class="col-6 col-lg-3">
+                                                        <label class="form-check form-check-image">
+                                                            <input class="form-check-input quiz__input--next" type="radio" name="contact" value="Whatsapp">
+                                                            <span class="form-check-label">
+                                                                <i class="fab fa-whatsapp fa-5x"></i>
+                                                                <br>Whatsapp
+                                                            </span>
+                                                            <span class="quiz__border"></span>
+                                                        </label>
+                                                    </div>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="quiz">
+                                            <div class="quiz__title">Всё готово!</div>
+                                            <div class="quiz__description">На какой номер отправить предложение?</div>
+                                            <div class="quiz__selection">
+                                                <div class="form-floating">
+                                                    <input name="name" type="text" class="form-control" id="quiz-name" placeholder="Ваше имя">
+                                                    <label for="quiz-name">Ваше имя</label>
+                                                </div>
+                                                <div class="form-floating mt-4">
+                                                    <input name="phone" type="tel" class="form-control" id="quiz-tel" placeholder="Номер телефона" required>
+                                                    <label for="quiz-tel">Номер телефона *</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary btn-lg w-100 mt-4 app-ff-alt">Получить расчет</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer quiz-buttons">
+                        <button type="button" class="quiz-button-prev btn btn-outline-primary me-auto"><i class="fa fa-angle-double-left"></i> Назад</button>
+                        <button type="button" class="quiz-button-next btn btn-primary">Вперед <i class="fa fa-angle-double-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="./dist/bundle.js"></script>
 </body>
 
