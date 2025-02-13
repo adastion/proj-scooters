@@ -11,10 +11,19 @@
         }
 }
 
-.section-catalog-card {
-        transition: all 0.3s ease-in-out;
+.section-cards {
+        transition: all 0.3s ease-in-out !important;
+        & .app-image-wrap img:last-child {
+                display: none !important;
+        }
         &:hover {
-                $box-shadow-lg: 0 0.5rem 1rem rgba($black, 0.6);
+                $box-shadow-lg: 0 0.7rem 0.9rem rgba($black, 0.8);
                 box-shadow: $box-shadow-lg !important;
+                & .app-image-wrap img:first-child {
+                        display: none !important;
+                }
+                & .app-image-wrap img:last-child {
+                        display: inline-block !important;
+                }
         }
 }

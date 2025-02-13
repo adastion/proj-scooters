@@ -30,13 +30,15 @@ import '../index.html'; // Hack for recompile webpack when html changes (require
 import './styles/style.scss';
 
 import form from './components/form';
-import LightCountdown from "./components/lightCountdown/lightCountdown";
+import LightCountdown from './components/lightCountdown/lightCountdown';
 import lightbox from './components/lightbox';
 import bootstrapModalHash from './components/bootstrapModalHash';
+import quiz from './components/quiz/quiz';
 
 document.addEventListener('DOMContentLoaded', () => {
-    form();
-    lightbox();
-    new LightCountdown()?.play();
-    bootstrapModalHash(bootstrapModal);
+        form();
+        lightbox();
+        new LightCountdown()?.play();
+        bootstrapModalHash(bootstrapModal);
+        quiz(config.get('quiz'));
 });
