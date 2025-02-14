@@ -34,6 +34,7 @@ import LightCountdown from './components/lightCountdown/lightCountdown';
 import lightbox from './components/lightbox';
 import bootstrapModalHash from './components/bootstrapModalHash';
 import quiz from './components/quiz/quiz';
+import sliderSwiper from './components/sliderSwiper/sliderSwiper';
 
 document.addEventListener('DOMContentLoaded', () => {
         form();
@@ -41,4 +42,5 @@ document.addEventListener('DOMContentLoaded', () => {
         new LightCountdown()?.play();
         bootstrapModalHash(bootstrapModal);
         quiz();
+        sliderSwiper();
 });

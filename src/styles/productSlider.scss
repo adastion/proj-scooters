@@ -1,0 +1,33 @@
+.productSlider {
+        & .swiper-wrapper {
+                overflow: hidden;
+        }
+        & .swiper-slide {
+                height: 50px !important;
+                width: 50px !important;
+                & img {
+                        height: 100% !important;
+                }
+                @include media-breakpoint-up(lg) {
+                    height: 90px !important;
+                    width: 90px !important;
+                }
+            }
+            & .swiper-slide-thumb-active {
+                border-color: $accent !important;
+            }
+        }
+        .productSlider2 {
+            --swiper-navigation-color: #{$accent};
+            --swiper-navigation-size: 2rem;
+            & .swiper-slide {
+                aspect-ratio: 12/8;
+                text-align: center !important;
+                & img {
+                    height: 100% !important;
+                }
+                @include media-breakpoint-up(lg) { 
+                    aspect-ratio: 12/10;
+                }
+        }
+}

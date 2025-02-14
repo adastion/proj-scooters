@@ -1424,7 +1424,7 @@
         </div>
     </div>
     <div class="modal fade" id="modal-card-info">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
@@ -1432,7 +1432,40 @@
                 </div>
                 <div class="row g-3">
                     <div class="col-lg-6">
-                        slider
+                        <div class="swiper productSlider2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/catalog/s1.png" alt="pic">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src=".//assets/images/catalog/s3-02.jpg" alt="pic">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/catalog/s3-09.jpg" alt="pic">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/catalog/2.jpg" alt="pic">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="swiper productSlider">
+                            <div class="swiper-wrapper p-1 justify-content-center">
+                                <div class="swiper-slide border overflow-hidden">
+                                    <img src="./assets/images/catalog/s1.png" alt="pic">
+                                </div>
+                                <div class="swiper-slide border overflow-hidden">
+                                    <img src=".//assets/images/catalog/s3-02.jpg" alt="pic">
+                                </div>
+                                <div class="swiper-slide border overflow-hidden">
+                                    <img src="./assets/images/catalog/s3-09.jpg" alt="pic">
+                                </div>
+                                <div class="swiper-slide border overflow-hidden">
+                                    <img src="./assets/images/catalog/2.jpg" alt="pic">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="modal-body">
@@ -1478,22 +1511,23 @@
         </div>
     </div>
     <div id="modal-quiz" class="modal fade" tabindex="-1">
-        <div class="modal-dialog  modal-dialog-scrollable modal-xl modal-fullscreen-sm-down">
+        <div class="modal-dialog  modal-dialog-scrollable modal-lg modal-fullscreen-sm-down">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title app-primary">Пройдите тест, чтобы мы смогли подобрать для Вас идеальный вариант! </h3>
+                    <h3 class="modal-title app-primary">Пройдите тест, чтобы мы смогли подобрать для Вас идеальный
+                        вариант! </h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-0">
+                <div class="modal-body p-md-4">
                     <form>
                         <div id="quiz" class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="quiz">
                                         <div class="quiz__title">Бренд</div>
-                                        <div class="quiz__description">Какой тип транспорта вам подходит? </div>
+                                        <div>Какой тип транспорта вам подходит? </div>
                                         <div class="quiz__selection">
-                                            <div class="row row-cols-md-2 row-cols-lg-5 gy-5">
+                                            <div class="row row-cols-md-2 row-cols-lg-5">
                                                 <div>
                                                     <label
                                                         class="section-quiz-hover d-flex flex-column justify-content-between h-100">
@@ -1536,9 +1570,9 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="quiz">
-                                        <div class="quiz__description">Кто будет кататься? </div>
+                                        <div>Кто будет кататься? </div>
                                         <div class="quiz__selection">
-                                            <div class="row row-cols-md-2 row-cols-lg-5 gy-5">
+                                            <div class="row row-cols-md-2 row-cols-lg-5">
                                                 <div>
                                                     <label
                                                         class="section-quiz-hover d-flex flex-column justify-content-between h-100">
@@ -1554,7 +1588,7 @@
                                                     <label
                                                         class="section-quiz-hover d-flex flex-column justify-content-between h-100">
                                                         <span class="app-img-wrap d-inline-block overflow-hidden">
-                                                            <img class="w-100" src="./assets/images/3.png" alt="pic">
+                                                            <img class="w-100" src="./assets/images/4.png" alt="pic">
                                                         </span>
                                                         <input class=" visually-hidden" type="radio" name="driver"
                                                             value="Взрослый" checked>
@@ -1565,7 +1599,7 @@
                                                     <label
                                                         class="section-quiz-hover d-flex flex-column justify-content-between h-100">
                                                         <span class="app-img-wrap d-inline-block overflow-hidden">
-                                                            <img class="w-100" src="./assets/images/4.png" alt="pic">
+                                                            <img class="w-100" src="./assets/images/3.png" alt="pic">
                                                         </span>
                                                         <input class=" visually-hidden" type="radio" name="driver"
                                                             value="Нужно кататься вдвоем">
@@ -1579,9 +1613,9 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="quiz">
-                                        <div class="quiz__description">Где планируете кататься?</div>
+                                        <div>Где планируете кататься?</div>
                                         <div class="quiz__selection">
-                                            <div class="row row-cols-md-2 row-cols-lg-5 gy-5">
+                                            <div class="row row-cols-md-2 row-cols-lg-5">
                                                 <div>
                                                     <label
                                                         class="section-quiz-hover d-flex flex-column justify-content-between h-100">
@@ -1614,24 +1648,26 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="quiz">
-                                        <div class="quiz__description mb-4">Сколько хотели бы проезжать на 1 заряде? </div>
                                         <div class="quiz__selection">
-                                            <div class="row gy-5 w-100">
+                                            <div>
+                                                <span>Сколько хотели бы проезжать на 1 заряде?</span>
+                                            </div>
+                                            <div class="row w-100">
                                                 <div class="mt-2">
                                                     <label class="d-flex align-items-center gap-3 m-0 p-0">
-                                                        <input class="" type="radio" name="time" value="До 30 км">
+                                                        <input type="radio" name="time" value="До 30 км" checked>
                                                         <span class="form-check-label"> До 30 км </span>
                                                     </label>
                                                 </div>
                                                 <div class="mt-2">
                                                     <label class="d-flex align-items-center gap-3 m-0 p-0">
-                                                        <input class="" type="radio" name="time" value="От 30 до 45 км">
+                                                        <input type="radio" name="time" value="От 30 до 45 км">
                                                         <span class="form-check-label"> От 30 до 45 км </span>
                                                     </label>
                                                 </div>
                                                 <div class="mt-2">
                                                     <label class="d-flex align-items-center gap-3 m-0 p-0">
-                                                        <input class="" type="radio" name="time" value="Более 45 км">
+                                                        <input type="radio" name="time" value="Более 45 км">
                                                         <span class="form-check-label"> Более 45 км </span>
                                                     </label>
                                                 </div>
@@ -1641,32 +1677,34 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="quiz">
-                                        <div class="quiz__description mb-4">С какой максимальной скоростью хотели бы
-                                            кататься?
+                                        <div class="quiz-description">
+                                            <span>С какой максимальной скоростью хотели бы
+                                                кататься?
+                                            </span>
                                         </div>
                                         <div class="quiz__selection">
-                                            <div class="row gy-5 w-100">
+                                            <div class="row  w-100">
                                                 <div class="mt-2">
                                                     <label class="d-flex align-items-center gap-3 m-0 p-0">
-                                                        <input class="" type="radio" name="speed" value="До 25 км/ч">
+                                                        <input type="radio" name="speed" value="До 25 км/ч" checked>
                                                         <span class="form-check-label"> До 25 км/ч</span>
                                                     </label>
                                                 </div>
                                                 <div class="mt-2">
                                                     <label class="d-flex align-items-center gap-3 m-0 p-0">
-                                                        <input class="" type="radio" name="speed" value="До 35 км/ч">
+                                                        <input type="radio" name="speed" value="До 35 км/ч">
                                                         <span class="form-check-label"> До 35 км/ч </span>
                                                     </label>
                                                 </div>
                                                 <div class="mt-2">
                                                     <label class="d-flex align-items-center gap-3 m-0 p-0">
-                                                        <input class="" type="radio" name="speed" value="До 45 км/ч">
+                                                        <input type="radio" name="speed" value="До 45 км/ч">
                                                         <span class="form-check-label"> До 45 км/ч </span>
                                                     </label>
                                                 </div>
                                                 <div class="mt-2">
                                                     <label class="d-flex align-items-center gap-3 m-0 p-0">
-                                                        <input class="" type="radio" name="speed" value="Более 45 км">
+                                                        <input type="radio" name="speed" value="Более 45 км">
                                                         <span class="form-check-label"> Более 45 км </span>
                                                     </label>
                                                 </div>
@@ -1676,7 +1714,8 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="quiz">
-                                        <p class="quiz__description mb-4">Спасибо за ответы. Оставьте Ваш номер телефона,
+                                        <p>Спасибо за ответы. Оставьте Ваш номер
+                                            телефона,
                                             чтобы специалист смог подобрать для Вас идеальный вариант!</p>
                                         <div>
                                             <span> Также, вы получите<strong class="text-accent"> 6 подарков </strong>
@@ -1698,8 +1737,9 @@
                                         </div>
                                         <div
                                             class="text-center d-grid d-md-flex justify-content-center align-items-md-center gap-3 mt-2">
-                                            <input class="form-control w-auto rounded-pill p-2 text-center text-white btn btn-accent" type="tel"
-                                                placeholder="+375 33 999 99 99" aria-label="telephone">
+                                            <input
+                                                class="form-control w-auto rounded-pill p-2 text-center text-white btn btn-accent"
+                                                type="tel" placeholder="+375 33 999 99 99" aria-label="telephone">
                                             <button type="submit"
                                                 class="input-group-text btn btn-dark">Подобрать</button>
                                         </div>
