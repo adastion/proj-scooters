@@ -6,23 +6,29 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const sliderSwiper = () => {
-        const swiper = new MySwiper('.productSlider', {
-                spaceBetween: 6,
-                slidesPerView: 4,
-                freeMode: true,
-                watchSlidesProgress: true,
-        });
-        new MySwiper('.productSlider2', {
-                modules: [Navigation, Thumbs],
-                spaceBetween: 10,
-                centeredSlides: true,
-                navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                },
-                thumbs: {
-                        swiper: swiper,
-                },
+        const sliders = document.querySelectorAll('.swiper-main-card');
+
+        sliders.forEach((slider, index) => {
+                const minSliders = slider.querySelectorAll('.swiper');
+
+                const swiper = new MySwiper(minSliders[1], {
+                        spaceBetween: 6,
+                        slidesPerView: 4,
+                        freeMode: true,
+                        watchSlidesProgress: true,
+                });
+                new MySwiper(minSliders[0], {
+                        modules: [Navigation, Thumbs],
+                        spaceBetween: 10,
+                        centeredSlides: true,
+                        navigation: {
+                                nextEl: slider.querySelector('.swiper-button-next'),
+                                prevEl: slider.querySelector('.swiper-button-prev'),
+                        },
+                        thumbs: {
+                                swiper: swiper,
+                        },
+                });
         });
 };
 
