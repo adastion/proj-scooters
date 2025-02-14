@@ -12,7 +12,7 @@ const sliderSwiper = () => {
                 freeMode: true,
                 watchSlidesProgress: true,
         });
-        const swiper2 = new MySwiper('.productSlider2', {
+        new MySwiper('.productSlider2', {
                 modules: [Navigation, Thumbs],
                 spaceBetween: 10,
                 centeredSlides: true,

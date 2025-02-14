@@ -44,6 +44,12 @@ button {
         &--22-32 {
                 @include responsive-size(font-size, 22, 32, lg);
         }
+        &--14-18 {
+                @include responsive-size(font-size, 14, 18, lg);
+                white-space: normal;
+                word-wrap: break-word;
+                max-width: 100%;
+        }
 }
 
 .app-text-small {

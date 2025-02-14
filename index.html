@@ -512,9 +512,9 @@
                                     <div class="d-flex justify-content-between align-items-stretch gap-2">
                                         <button type="button"
                                             class="btn btn-outline-secondary px-1 w-100 stretched-link"
-                                            dbutton type="button"tle="modal" data-bs-target="#modal-card-info">Подробнее</button>
-                                        <a href="#" class="btn btn-accent text-white px-1 w-100 z-button"
-                                            data-bs-toggle="modal" data-bs-target="#modal-order">Заказать</a>
+                                            data-bs-toggle="modal" data-bs-target="#modal-card-info">Подробнее</button>
+                                        <button type="button" class="btn btn-accent text-white px-1 w-100 z-3"
+                                            data-bs-toggle="modal" data-bs-target="#modal-order">Заказать</button>
                                     </div>
                                 </div>
                             </div>
@@ -1282,7 +1282,7 @@
                             <input type="tel" class="form-control rounded-0 me-2" id="floatingInputValue"
                                 aria-label="Recipient's username" aria-describedby="basic-addon2"
                                 placeholder="Номер телефона">
-                            <button class="input-group-text btn btn-accent rounded-0" type="submit" id="basic-addon2"
+                            <button class="input-group-text btn btn-accent rounded-0" type="submit" id="basic-addon3"
                                 aria-label="Отправить">
                                 <svg class="text-white" width="20" height="20">
                                     <use href="#arrow-submit"></use>
@@ -1519,7 +1519,7 @@
         <div class="modal-dialog  modal-dialog-scrollable modal-lg modal-fullscreen-sm-down">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title app-primary">Пройдите тест, чтобы мы смогли подобрать для Вас идеальный
+                    <h3 class="modal-title app-text-primary">Пройдите тест, чтобы мы смогли подобрать для Вас идеальный
                         вариант! </h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -1532,41 +1532,47 @@
                                         <div class="quiz__title">Бренд</div>
                                         <div>Какой тип транспорта вам подходит? </div>
                                         <div class="quiz__selection">
-                                            <div class="row row-cols-md-2 row-cols-lg-5">
+                                            <div class="row row-cols-sm-2 row-cols-lg-4 g-2">
                                                 <div>
                                                     <label
-                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100 p-2">
                                                         <span class="app-img-wrap d-inline-block overflow-hidden">
                                                             <img class="w-100"
                                                                 src="./assets/images/catalog/1583568217.png" alt="pic">
                                                         </span>
                                                         <input class=" visually-hidden" type="radio" name="brand"
                                                             value="Электросамокат" checked>
-                                                        <span class="fs-6 flex-grow-0"> <br>Электросамокат </span>
+                                                        <span
+                                                            class="app-text-primary app-text-primary--14-18  text-center flex-grow-0 h-auto">Электросамокат
+                                                        </span>
                                                     </label>
                                                 </div>
                                                 <div>
                                                     <label
-                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100 p-2">
                                                         <span class="app-img-wrap d-inline-block overflow-hidden">
                                                             <img class="w-100" src="./assets/images/catalog/16.jpg"
                                                                 alt="pic">
                                                         </span>
                                                         <input class=" visually-hidden" type="radio" name="brand"
                                                             value="Электроскутер">
-                                                        <span class="fs-6 flex-grow-0"> <br>Электроскутер </span>
+                                                        <span
+                                                            class="app-text-primary app-text-primary--14-18  text-center flex-grow-0 h-auto">Электроскутер
+                                                        </span>
                                                     </label>
                                                 </div>
                                                 <div>
                                                     <label
-                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100 p-2">
                                                         <span class="app-img-wrap d-inline-block overflow-hidden">
                                                             <img class="w-100" src="./assets/images/catalog/12.jpg"
                                                                 alt="pic">
                                                         </span>
                                                         <input class=" visually-hidden" type="radio" name="brand"
                                                             value="Электровелосипед">
-                                                        <span class="fs-6 flex-grow-0"> <br>Электровелосипед </span>
+                                                        <span
+                                                            class="app-text-primary app-text-primary--14-18  text-center flex-grow-0 h-auto">Электровелосипед
+                                                        </span>
                                                     </label>
                                                 </div>
                                             </div>
@@ -1577,38 +1583,44 @@
                                     <div class="quiz">
                                         <div>Кто будет кататься? </div>
                                         <div class="quiz__selection">
-                                            <div class="row row-cols-md-2 row-cols-lg-5">
+                                            <div class="row row-cols-sm-2 row-cols-lg-4 g-2">
                                                 <div>
                                                     <label
-                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100 p-2">
                                                         <span class="app-img-wrap d-inline-block overflow-hidden">
                                                             <img class="w-100" src="./assets/images/1.png" alt="pic">
                                                         </span>
                                                         <input class=" visually-hidden" type="radio" name="driver"
                                                             value="Ребенок">
-                                                        <span class="fs-6 flex-grow-0"> <br>Ребенок </span>
+                                                        <span
+                                                            class="app-text-primary app-text-primary--14-18  text-center flex-grow-0 h-auto">Ребенок
+                                                        </span>
                                                     </label>
                                                 </div>
                                                 <div>
                                                     <label
-                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100 p-2">
                                                         <span class="app-img-wrap d-inline-block overflow-hidden">
                                                             <img class="w-100" src="./assets/images/4.png" alt="pic">
                                                         </span>
                                                         <input class=" visually-hidden" type="radio" name="driver"
                                                             value="Взрослый" checked>
-                                                        <span class="fs-6 flex-grow-0"> <br> Взрослый </span>
+                                                        <span
+                                                            class="app-text-primary app-text-primary--14-18  text-center flex-grow-0 h-auto">
+                                                            Взрослый </span>
                                                     </label>
                                                 </div>
                                                 <div>
                                                     <label
-                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100 p-2">
                                                         <span class="app-img-wrap d-inline-block overflow-hidden">
                                                             <img class="w-100" src="./assets/images/3.png" alt="pic">
                                                         </span>
                                                         <input class=" visually-hidden" type="radio" name="driver"
                                                             value="Нужно кататься вдвоем">
-                                                        <span class="fs-6 flex-grow-0"> <br>Нужно кататься вдвоем
+                                                        <span
+                                                            class="app-text-primary app-text-primary--14-18  text-center flex-grow-0 h-auto">Нужно
+                                                            кататься вдвоем
                                                         </span>
                                                     </label>
                                                 </div>
@@ -1620,30 +1632,34 @@
                                     <div class="quiz">
                                         <div>Где планируете кататься?</div>
                                         <div class="quiz__selection">
-                                            <div class="row row-cols-md-2 row-cols-lg-5">
+                                            <div class="row row-cols-sm-2 row-cols-lg-4 g-2">
                                                 <div>
                                                     <label
-                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100 p-2">
                                                         <span class="app-img-wrap d-inline-block overflow-hidden">
                                                             <img class="w-100" src="./assets/images/driver1.png"
                                                                 alt="pic">
                                                         </span>
                                                         <input class=" visually-hidden" type="radio" name="road"
                                                             value="В городе (тротуар + велодорожки)" checked>
-                                                        <span class="fs-6 flex-grow-0"> <br>В городе (тротуар +
+                                                        <span
+                                                            class="app-text-primary app-text-primary--14-18  text-center flex-grow-0 h-auto">В
+                                                            городе (тротуар +
                                                             велодорожки) </span>
                                                     </label>
                                                 </div>
                                                 <div>
                                                     <label
-                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100">
+                                                        class="section-quiz-hover d-flex flex-column justify-content-between h-100 p-2">
                                                         <span class="app-img-wrap d-inline-block overflow-hidden">
                                                             <img class="w-100" src="./assets/images/driver2.png"
                                                                 alt="pic">
                                                         </span>
                                                         <input class=" visually-hidden" type="radio" name="road"
                                                             value="За городом (пересеченная местность)">
-                                                        <span class="fs-6 flex-grow-0"> <br> За городом (пересеченная
+                                                        <span
+                                                            class="app-text-primary app-text-primary--14-18  text-center flex-grow-0 h-auto">
+                                                            За городом (пересеченная
                                                             местность) </span>
                                                     </label>
                                                 </div>
@@ -1659,22 +1675,33 @@
                                             </div>
                                             <div class="row w-100">
                                                 <div class="mt-2">
-                                                    <label class="d-flex align-items-center gap-3 m-0 p-0">
-                                                        <input type="radio" name="time" value="До 30 км" checked>
+                                                    <div class="input-group-text d-flex align-items-center gap-3">
+                                                        <label class="input-group-text m-0 p-0">
+                                                            <input class="form-check-input mt-0" type="radio"
+                                                                name="time" value="До 30 км" aria-label="До 30 км"
+                                                                checked>
+                                                        </label>
                                                         <span class="form-check-label"> До 30 км </span>
-                                                    </label>
+                                                    </div>
                                                 </div>
                                                 <div class="mt-2">
-                                                    <label class="d-flex align-items-center gap-3 m-0 p-0">
-                                                        <input type="radio" name="time" value="От 30 до 45 км">
+                                                    <div class="input-group-text d-flex align-items-center gap-3">
+                                                        <label class="input-group-text m-0 p-0">
+                                                            <input class="form-check-input mt-0" type="radio"
+                                                                name="time" value="До 30 км"
+                                                                aria-label="От 30 до 45 км">
+                                                        </label>
                                                         <span class="form-check-label"> От 30 до 45 км </span>
-                                                    </label>
+                                                    </div>
                                                 </div>
                                                 <div class="mt-2">
-                                                    <label class="d-flex align-items-center gap-3 m-0 p-0">
-                                                        <input type="radio" name="time" value="Более 45 км">
+                                                    <div class="input-group-text d-flex align-items-center gap-3">
+                                                        <label class="input-group-text m-0 p-0">
+                                                            <input class="form-check-input mt-0" type="radio"
+                                                                name="time" value="До 30 км" aria-label="Более 45 км">
+                                                        </label>
                                                         <span class="form-check-label"> Более 45 км </span>
-                                                    </label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1690,28 +1717,44 @@
                                         <div class="quiz__selection">
                                             <div class="row  w-100">
                                                 <div class="mt-2">
-                                                    <label class="d-flex align-items-center gap-3 m-0 p-0">
-                                                        <input type="radio" name="speed" value="До 25 км/ч" checked>
-                                                        <span class="form-check-label"> До 25 км/ч</span>
-                                                    </label>
+                                                    <div class="input-group-text d-flex align-items-center gap-3">
+                                                        <label class="input-group-text m-0 p-0">
+                                                            <input class="form-check-input mt-0" type="radio"
+                                                                name="max-speed" value="До 30 км"
+                                                                aria-label="До 25 км/ч" checked>
+                                                        </label>
+                                                        <span class="form-check-label"> До 25 км/ч </span>
+                                                    </div>
                                                 </div>
                                                 <div class="mt-2">
-                                                    <label class="d-flex align-items-center gap-3 m-0 p-0">
-                                                        <input type="radio" name="speed" value="До 35 км/ч">
+                                                    <div class="input-group-text d-flex align-items-center gap-3">
+                                                        <label class="input-group-text m-0 p-0">
+                                                            <input class="form-check-input mt-0" type="radio"
+                                                                name="max-speed" value="До 30 км"
+                                                                aria-label=" До 35 км/ч">
+                                                        </label>
                                                         <span class="form-check-label"> До 35 км/ч </span>
-                                                    </label>
+                                                    </div>
                                                 </div>
                                                 <div class="mt-2">
-                                                    <label class="d-flex align-items-center gap-3 m-0 p-0">
-                                                        <input type="radio" name="speed" value="До 45 км/ч">
+                                                    <div class="input-group-text d-flex align-items-center gap-3">
+                                                        <label class="input-group-text m-0 p-0">
+                                                            <input class="form-check-input mt-0" type="radio"
+                                                                name="max-speed" value="До 30 км"
+                                                                aria-label=" До 45 км/ч">
+                                                        </label>
                                                         <span class="form-check-label"> До 45 км/ч </span>
-                                                    </label>
+                                                    </div>
                                                 </div>
                                                 <div class="mt-2">
-                                                    <label class="d-flex align-items-center gap-3 m-0 p-0">
-                                                        <input type="radio" name="speed" value="Более 45 км">
+                                                    <div class="input-group-text d-flex align-items-center gap-3">
+                                                        <label class="input-group-text m-0 p-0">
+                                                            <input class="form-check-input mt-0" type="radio"
+                                                                name="max-speed" value="До 30 км"
+                                                                aria-label=" Более 45 км">
+                                                        </label>
                                                         <span class="form-check-label"> Более 45 км </span>
-                                                    </label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
