@@ -262,23 +262,28 @@
                 <div class="mb-5">
                     <ul class="list-unstyled d-flex gap-2 justify-content-center flex-wrap flex-lg-nowrap">
                         <li>
-                            <button class="btn btn-link link-accent link-underline-opacity-0 fw-bold fs-5 active"
+                            <button data-filter="all"
+                                class="btn btn-link link-accent link-underline-opacity-0 fw-bold fs-5 active"
                                 type="button">Все</button>
                         </li>
                         <li>
-                            <button class="btn btn-link link-accent link-underline-opacity-0 fw-bold fs-5"
+                            <button data-filter=".tricycles"
+                                class="btn btn-link link-accent link-underline-opacity-0 fw-bold fs-5"
                                 type="button">Трициклы</button>
                         </li>
                         <li>
-                            <button class="btn btn-link link-accent link-underline-opacity-0 fw-bold fs-5"
+                            <button data-filter=".scooters"
+                                class="btn btn-link link-accent link-underline-opacity-0 fw-bold fs-5"
                                 type="button">Скутеры</button>
                         </li>
                         <li>
-                            <button class="btn btn-link link-accent link-underline-opacity-0 fw-bold fs-5"
+                            <button data-filter=".bicycles"
+                                class="btn btn-link link-accent link-underline-opacity-0 fw-bold fs-5"
                                 type="button">Велосипеды</button>
                         </li>
                         <li>
-                            <button class="btn btn-link link-accent link-underline-opacity-0 fw-bold fs-5"
+                            <button data-filter=".electric-bikes"
+                                class="btn btn-link link-accent link-underline-opacity-0 fw-bold fs-5"
                                 type="button">Электротрициклы</button>
                         </li>
                     </ul>
@@ -358,8 +363,8 @@
                     </form>
                 </div>
                 <div class="mb-5">
-                    <ul class="list-unstyled row row-cols-sm-2 row-cols-lg-3 g-3">
-                        <li>
+                    <ul class="filter-block list-unstyled row row-cols-sm-2 row-cols-lg-3 g-3">
+                        <li class="mix electric-bikes">
                             <div
                                 class="card h-100 shadow-lg rounded-4 overflow-hidden justify-content-between section-cards">
                                 <div class="app-image-wrap section-cards-img-preview">
@@ -391,7 +396,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="mix electric-bikes tricycles">
                             <div
                                 class="card h-100 shadow-lg rounded-4 overflow-hidden justify-content-between section-cards">
                                 <div class="app-image-wrap section-cards-img-preview">
@@ -423,7 +428,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="mix scooters tricycles">
                             <div
                                 class="card h-100 shadow-lg rounded-4 overflow-hidden justify-content-between section-cards">
                                 <div class="app-image-wrap section-cards-img-preview">
@@ -455,7 +460,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="mix bicycles scooters">
                             <div
                                 class="card h-100 shadow-lg rounded-4 overflow-hidden justify-content-between section-cards">
                                 <div class="app-image-wrap section-cards-img-preview">
@@ -487,7 +492,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="mix bicycles">
                             <div
                                 class="card h-100 shadow-lg rounded-4 overflow-hidden justify-content-between section-cards">
                                 <div class="app-image-wrap section-cards-img-preview">

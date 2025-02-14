@@ -35,6 +35,7 @@ import lightbox from './components/lightbox';
 import bootstrapModalHash from './components/bootstrapModalHash';
 import quiz from './components/quiz/quiz';
 import sliderSwiper from './components/sliderSwiper/sliderSwiper';
+import initMixitup from './components/mixitup';
 
 document.addEventListener('DOMContentLoaded', () => {
         form();
@@ -43,4 +44,5 @@ document.addEventListener('DOMContentLoaded', () => {
         bootstrapModalHash(bootstrapModal);
         quiz();
         sliderSwiper();
+        initMixitup();
 });
