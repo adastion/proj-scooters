@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 const sliderSwiper = () => {
         const sliders = document.querySelectorAll('.swiper-main-card');
 
-        sliders.forEach((slider, index) => {
+        sliders.forEach((slider) => {
                 const minSliders = slider.querySelectorAll('.swiper');
 
                 const swiper = new MySwiper(minSliders[1], {
