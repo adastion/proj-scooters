@@ -6,6 +6,7 @@
         "glightbox": "^3.3.0",
         "lite-youtube-embed": "^0.3.3",
         "mixitup": "^3.3.2",
+        "mixitup-multifilter": "^3.3.7",
         "swiper": "^11.2.3"
     },
     "devDependencies": {
