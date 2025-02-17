@@ -315,21 +315,50 @@
                                     class="btn btn-link link-accent link-underline-opacity-0 fw-bold fs-6 dropdown-toggle dropdown-center"
                                     type="button" data-bs-toggle="dropdown" aria-expanded="false">Цена</button>
                                 <div class="dropdown-menu app-dropdown-height rounded-0 p-0">
-                                    <fieldset data-filter-group="price"
+                                    <fieldset data-filter-group
                                         class="d-grid shadow-lg border-0 overflow-y-auto g-3 p-2">
                                         <legend class="visually-hidden">Max пробег</legend>
-                                        <div class="input-group align-items-center d-grid gap-2 gap-md-0 d-md-flex">
-                                            <input id="price-from" type="number" class="form-control w-auto" value="100"
-                                                placeholder="100" aria-label="Минимальноя цена">
-                                            <span
-                                                class="input-group-text rounded-end d-none d-md-inline-block">BYN</span>
-                                            <span class="mx-2 d-none d-md-inline-block"> - </span>
-                                            <input id="price-to" type="number" class="form-control rounded-start w-auto"
-                                                value="100000" placeholder="100000" aria-label="Максимальная цена">
-                                            <span
-                                                class="input-group-text rounded-end d-none d-md-inline-block">BYN</span>
-                                            <button class="btn btn-outline-secondary ms-3 rounded-2" type="button"
-                                                id="filter-btn-price">Найти</button>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox27"
+                                                value=".price1">
+                                            <label class="form-check-label" for="inlineCheckbox27">от 100 BYN - до 1000
+                                                BYN</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox28"
+                                                value=".price2">
+                                            <label class="form-check-label" for="inlineCheckbox28">от 1100 BYN - до 2000
+                                                BYN</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox29"
+                                                value=".price3">
+                                            <label class="form-check-label" for="inlineCheckbox29">от 2100 BYN - до 3000
+                                                BYN</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox30"
+                                                value=".price4">
+                                            <label class="form-check-label" for="inlineCheckbox30">от 3100 BYN - до 4000
+                                                BYN</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox32"
+                                                value=".price5">
+                                            <label class="form-check-label" for="inlineCheckbox32">от 4100 BYN - до 5000
+                                                BYN</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox33"
+                                                value=".price6">
+                                            <label class="form-check-label" for="inlineCheckbox33">от 5100 BYN - до 6000
+                                                BYN</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox34"
+                                                value=".price7">
+                                            <label class="form-check-label" for="inlineCheckbox34">от 6100 BYN - до 7000
+                                                BYN</label>
                                         </div>
                                     </fieldset>
                                 </div>
@@ -514,7 +543,7 @@
                 </form>
                 <div class="mb-5">
                     <ul class="filter-block list-unstyled row row-cols-sm-2 row-cols-lg-3 g-3">
-                        <li class="mix tricycles electric-bikes aovo k20 k25 k50 ks30 w250 seat-true">
+                        <li class="mix tricycles electric-bikes aovo k20 k25 k50 ks30 w250 seat-true price1">
                             <div
                                 class="card h-100 shadow-lg rounded-4 overflow-hidden justify-content-between section-cards">
                                 <div class="app-image-wrap section-cards-img-preview">
@@ -546,7 +575,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="mix tricycles kugoo k20 k25 k40 ks30 w178 seat-true">
+                        <li class="mix tricycles kugoo k20 k25 k40 ks30 w178 seat-true price1">
                             <div
                                 class="card h-100 shadow-lg rounded-4 overflow-hidden justify-content-between section-cards">
                                 <div class="app-image-wrap section-cards-img-preview">
@@ -578,7 +607,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="mix tricycles kugoo k20 k25 k40 ks40 w250 seat-true">
+                        <li class="mix tricycles kugoo k20 k25 k40 ks40 w250 seat-true price3">
                             <div
                                 class="card h-100 shadow-lg rounded-4 overflow-hidden justify-content-between section-cards">
                                 <div class="app-image-wrap section-cards-img-preview">
@@ -597,8 +626,8 @@
                                         <span>Max пробег: до </span><span> 30 км</span> <br>
                                     </p>
                                     <div class="fw-bold fs-4 mb-4">
-                                        <span>999 р. </span>
-                                        <span class="text-black-50 text-decoration-line-through">1200 р.</span>
+                                        <span>2099 р. </span>
+                                        <span class="text-black-50 text-decoration-line-through">3800 р.</span>
                                     </div>
                                     <div class="d-flex justify-content-between align-items-stretch gap-2">
                                         <button type="button"
@@ -610,7 +639,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="mix scooters himo k20 k25 k35 ks40 w239 seat-false">
+                        <li class="mix scooters himo k20 k25 k35 ks40 w239 seat-false price1">
                             <div
                                 class="card h-100 shadow-lg rounded-4 overflow-hidden justify-content-between section-cards">
                                 <div class="app-image-wrap section-cards-img-preview">
@@ -642,7 +671,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="mix scooters himo k20 k25 k35 ks45 w400 seat-true">
+                        <li class="mix scooters himo k20 k25 k35 ks45 w400 seat-true price4">
                             <div
                                 class="card h-100 shadow-lg rounded-4 overflow-hidden justify-content-between section-cards">
                                 <div class="app-image-wrap section-cards-img-preview">
