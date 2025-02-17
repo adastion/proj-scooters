@@ -4,10 +4,15 @@ import mixitupMultifilter from 'mixitup-multifilter';
 mixitup.use(mixitupMultifilter);
 
 const initMixitup = () => {
-        let mixer = mixitup('.filter-block', {
+        const containerEl = document.querySelector('.filter-block');
+        let mixer = mixitup(containerEl, {
                 multifilter: {
                         enable: true, // enable the multifilter extension for the mixer
                 },
+        });
+
+        mixer.filter('[data-price]').then(function (state) {
+                console.log(state);
         });
 };
 
