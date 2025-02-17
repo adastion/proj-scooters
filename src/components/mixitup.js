@@ -10,10 +10,6 @@ const initMixitup = () => {
                         enable: true, // enable the multifilter extension for the mixer
                 },
         });
-
-        mixer.filter('[data-price]').then(function (state) {
-                console.log(state);
-        });
 };
 
 export default initMixitup;
