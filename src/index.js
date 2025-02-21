@@ -36,6 +36,7 @@ import bootstrapModalHash from './components/bootstrapModalHash';
 import quiz from './components/quiz/quiz';
 import sliderSwiper from './components/sliderSwiper/sliderSwiper';
 import initMixitup from './components/mixitup';
+import myAlpinejs from './components/myAlpinejs';
 
 document.addEventListener('DOMContentLoaded', () => {
         form();
@@ -45,4 +46,5 @@ document.addEventListener('DOMContentLoaded', () => {
         quiz();
         sliderSwiper();
         initMixitup();
+        myAlpinejs();
 });
