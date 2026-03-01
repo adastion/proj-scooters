@@ -1573,7 +1573,7 @@
     </svg>
 
     <!-- Modals -->
-    <div class="modal fade">
+    <div class="modal fade" id="modal-order">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-body">
@@ -1597,16 +1597,16 @@
                     <hr>
                     <form>
                         <div class="form-floating mb-4">
-                            <input type="text" name="name" class="form-control" 
+                            <input type="text" name="name" class="form-control" id="modal-order-name"
                                 placeholder="Ваше имя">
                             <label for="modal-order-name">Ваше имя</label>
                         </div>
                         <div class="form-floating mb-4">
-                            <input type="tel" name="tel" class="form-control" 
+                            <input type="tel" name="tel" class="form-control" id="modal-order-tel"
                                 placeholder="Номер телефона" required>
                             <label for="modal-order-tel">Номер телефона *</label>
                         </div>
-                        <button type="button" class="btn btn-accent text-white btn-lg w-100">Заказать звонок</button>
+                        <button type="submit" class="btn btn-accent text-white btn-lg w-100">Заказать звонок</button>
                     </form>
                 </div>
             </div>
